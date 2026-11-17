@@ -1,7 +1,6 @@
 // Visual testing only. No real authentication, purchases, or gameplay service yet.
-const storageKey="great-northern-kingdom-local-character-v1";
-let selected={name:"Jade",primaryClass:"mage",companion:"Muninn"};
-try{const saved=JSON.parse(localStorage.getItem(storageKey));if(saved&&typeof saved.name==="string"&&saved.name.trim()){selected={name:saved.name,primaryClass:saved.primaryClass||"mage",companion:"Muninn"};}}catch{}
+// Fixed preview identity until authenticated character selection is implemented.
+const selected={name:"Jade",primaryClass:"mage",companion:"Muninn"};
 document.getElementById("character-name").textContent=selected.name;
 document.getElementById("character-class").textContent=(selected.primaryClass==="mage"?"Mage":selected.primaryClass)+" · "+selected.companion;
 const messages={
