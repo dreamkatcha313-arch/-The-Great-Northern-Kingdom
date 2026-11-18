@@ -4,3 +4,8 @@ const messages={archive:["Academy Archive","The academy's educational archive wi
 const dialog=document.getElementById("panel"),content=document.getElementById("panel-content");
 for(const b of document.querySelectorAll("[data-panel]"))b.addEventListener("click",()=>{const key=b.dataset.panel,[title,description]=messages[key];document.getElementById("panel-title").textContent=title;document.getElementById("panel-description").textContent=description;content.replaceChildren();if(key==="regions"){const grid=document.createElement("div");grid.className="realm-grid";for(const [name,cls] of regions){const item=document.createElement("button");item.className="realm-button";item.type="button";item.textContent=name;const sub=document.createElement("small");sub.textContent=cls;item.append(sub);item.addEventListener("click",()=>{document.getElementById("panel-description").textContent=name+" — "+cls+" homeland. Its location on the map is provisional.";});grid.append(item);}content.append(grid);}dialog.showModal();});
 document.getElementById("panel-close").addEventListener("click",()=>dialog.close());
+
+// Load the correct art for screen orientation; retain CSS scenery if asset missing.
+const artPortrait=matchMedia("(max-width:650px) and (orientation:portrait)");
+function checkArt(){const url=artPortrait.matches?"assets/elyndor-portrait.webp":"assets/elyndor-landscape.webp";document.querySelector(".home").classList.remove("artwork-ready");const img=new Image();img.onload=()=>{if((artPortrait.matches?"assets/elyndor-portrait.webp":"assets/elyndor-landscape.webp")===url)document.querySelector(".home").classList.add("artwork-ready")};img.src=url;}
+checkArt();artPortrait.addEventListener("change",checkArt);
