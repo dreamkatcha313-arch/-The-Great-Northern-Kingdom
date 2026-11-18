@@ -6,9 +6,11 @@
 /* Cinematic illustration layers: uploaded files are used as visual-only backgrounds.
    Real buttons and links remain separate DOM elements above the artwork. */
 .landscape{background-image:linear-gradient(180deg,#07152618,#07152612),url("assets/elyndor-landscape.webp");background-size:cover;background-position:center center;background-repeat:no-repeat}
-.landscape>.sun,.landscape>.cloud,.landscape>.mountains,.landscape>.forest,.landscape>.water,.landscape>.central-spire,.landscape>.kingdom{display:none}
+.home.artwork-ready .landscape>.sun,.home.artwork-ready .landscape>.cloud,.home.artwork-ready .landscape>.mountains,.home.artwork-ready .landscape>.forest,.home.artwork-ready .landscape>.water,.home.artwork-ready .landscape>.central-spire,.home.artwork-ready .landscape>.kingdom{display:none}
 .landscape{pointer-events:none}.veil{background:linear-gradient(180deg,#05132233 0%,transparent 35%,transparent 66%,#04111d55 100%)}
 @media(max-width:650px) and (orientation:portrait){.landscape{background-image:linear-gradient(180deg,#07152615,#07152610),url("assets/elyndor-portrait.webp");background-position:center center;background-size:cover}}
 @media(max-width:850px) and (orientation:landscape){.landscape{background-position:center center}}
 /* Transparent hit targets, visually aligned with the artwork's decorative controls. */
 .top-actions button{background:#08162599}.main-actions{z-index:3}.secondary-actions button,.secondary-actions a{background:#071624a8}
+
+.home:not(.artwork-ready) .landscape{background-image:radial-gradient(ellipse at 81% 18%,#f4bd8c 0%,#b3b4bf 13%,transparent 35%),linear-gradient(180deg,#10243d 0%,#416482 31%,#73938a 55%,#264a4d 77%,#0b2336 100%)}
