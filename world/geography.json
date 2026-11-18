@@ -1,0 +1,97 @@
+{
+  "status": "provisional-geography-v1",
+  "coordinate_system": "normalized conceptual map x west-to-east y north-to-south",
+  "homelands": [
+    {
+      "className": "Mage",
+      "region": "Northern Kingdom",
+      "x": 28,
+      "y": 12
+    },
+    {
+      "className": "Samurai",
+      "region": "Eastern Kingdom",
+      "x": 88,
+      "y": 38
+    },
+    {
+      "className": "Ninja",
+      "region": "Western Kingdom",
+      "x": 10,
+      "y": 43
+    },
+    {
+      "className": "Cleric",
+      "region": "Southern Kingdom",
+      "x": 52,
+      "y": 91
+    },
+    {
+      "className": "Scholar",
+      "region": "Valtherus",
+      "x": 65,
+      "y": 19
+    },
+    {
+      "className": "Necromancer",
+      "region": "Umbral Kingdom",
+      "x": 30,
+      "y": 67
+    },
+    {
+      "className": "Druid",
+      "region": "Verdant Expanse",
+      "x": 80,
+      "y": 62
+    },
+    {
+      "className": "Ranger",
+      "region": "Warden's Reach",
+      "x": 70,
+      "y": 40
+    },
+    {
+      "className": "Warrior",
+      "region": "Ironhold",
+      "x": 25,
+      "y": 27
+    },
+    {
+      "className": "Alchemist",
+      "region": "Centerpoint",
+      "x": 50,
+      "y": 50
+    },
+    {
+      "className": "Bard",
+      "region": "Resonant Isles",
+      "x": 18,
+      "y": 88
+    },
+    {
+      "className": "Artificer",
+      "region": "Forgeward Dominion",
+      "x": 50,
+      "y": 28
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "Yggdrasil",
+      "near": "Northern Kingdom"
+    },
+    {
+      "name": "Valhalla",
+      "near": "Northern Kingdom"
+    },
+    {
+      "name": "Central Dojo",
+      "near": "Eastern Kingdom"
+    }
+  ],
+  "notes": [
+    "Barbarian class and homeland removed; content redistributed across Warrior, Ranger, Druid, Mage and Samurai.",
+    "Only Northern Kingdom uses a Norse theme.",
+    "Locations are conceptual and not real-world GPS coordinates."
+  ]
+}
