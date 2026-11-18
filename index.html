@@ -1,26 +1,17 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1829"><meta name="description" content="Axiom Academia — journey through the realms of Elyndor"><title>Axiom Academia | The World of Elyndor</title><link rel="stylesheet" href="home.css"></head>
-<body><main class="home">
-<div class="landscape" aria-hidden="true">
-<div class="sun"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
-<div class="mountains far"></div><div class="mountains near"></div><div class="forest forest-left"></div><div class="forest forest-right"></div><div class="water"></div>
-<div class="kingdom kingdom-north"><i>✧</i><span>Northern Kingdom<small>Mage</small></span></div>
-<div class="kingdom kingdom-iron"><i>✧</i><span>Ironhold<small>Warrior</small></span></div>
-<div class="kingdom kingdom-forge"><i>✧</i><span>Forgeward Dominion<small>Artificer</small></span></div>
-<div class="kingdom kingdom-scholar"><i>✧</i><span>Valtherus<small>Scholar</small></span></div>
-<div class="kingdom kingdom-west"><i>✧</i><span>Western Kingdom<small>Ninja</small></span></div>
-<div class="kingdom kingdom-ranger"><i>✧</i><span>Warden's Reach<small>Ranger</small></span></div>
-<div class="kingdom kingdom-east"><i>✧</i><span>Eastern Kingdom<small>Samurai</small></span></div>
-<div class="kingdom kingdom-center"><i>✧</i><span>Centerpoint<small>Alchemist</small></span></div>
-<div class="kingdom kingdom-umbral"><i>✧</i><span>Umbral Kingdom<small>Necromancer</small></span></div>
-<div class="kingdom kingdom-isles"><i>✧</i><span>Resonant Isles<small>Bard</small></span></div>
-<div class="kingdom kingdom-south"><i>✧</i><span>Southern Kingdom<small>Cleric</small></span></div>
-<div class="kingdom kingdom-druid"><i>✧</i><span>Verdant Expanse<small>Druid</small></span></div>
-<div class="central-spire"></div></div>
-<div class="veil" aria-hidden="true"></div>
-<header class="topbar"><div class="brand"><div class="brand-symbol">✧</div><h1>AXIOM <span>ACADEMIA</span></h1><p>THE WORLD OF ELYNDOR</p></div><div class="top-actions"><button type="button" data-panel="character" aria-label="Character">♙</button><button type="button" data-panel="messages" aria-label="Messages">✉</button><button type="button" data-panel="notifications" aria-label="Notifications">♧</button><button type="button" data-panel="settings" aria-label="Settings">⚙</button></div></header>
-<section class="character-scene" aria-label="Test character and raven companion"><div class="raven-wrap"><svg viewBox="0 0 220 185" role="img" aria-label="Muninn the raven"><defs><linearGradient id="plume" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7185a6"/><stop offset=".45" stop-color="#1b2d48"/><stop offset="1" stop-color="#050a15"/></linearGradient></defs><g class="raven-motion"><path d="M91 135 L35 174 L112 153Z" fill="#10192c"/><path class="raven-wing" d="M103 77 Q53 62 19 105 Q58 96 70 109 L22 130 Q71 124 116 131Z" fill="url(#plume)" stroke="#9ba6b7" stroke-width="1.5"/><ellipse cx="118" cy="113" rx="42" ry="48" fill="url(#plume)"/><path d="M121 75 Q142 28 176 55 Q191 69 181 90 L145 102Z" fill="url(#plume)"/><path d="M177 72 L218 81 L178 88Z" fill="#121824"/><circle class="raven-eye" cx="171" cy="65" r="3.4" fill="#e4d3a5"/><path d="M107 157 L105 180 M131 158 L131 181" stroke="#6c6564" stroke-width="4"/></g></svg></div><div class="jade-silhouette" aria-hidden="true"><div class="jade-head"></div><div class="jade-body"></div></div><p class="character-tag">JADE <span>· Mage · Muninn</span></p></section>
-<nav class="main-actions" aria-label="Game navigation"><a class="enter" href="becoming.html"><span class="star">✧</span><span>Enter Elyndor</span></a><div class="secondary-actions"><button type="button" data-panel="archive">♧ <span>Academy Archive</span></button><button type="button" data-panel="exchange">⚖ <span>Exchange of Elyndor</span></button><a href="becoming.html#character">♙ <span>Character</span></a><button type="button" data-panel="regions">◇ <span>Regions</span></button><button type="button" data-panel="store">♧ <span>Academy Store</span></button></div></nav>
-<dialog id="panel"><div class="panel-head"><h2 id="panel-title"></h2><button type="button" id="panel-close" aria-label="Close panel">✕</button></div><p id="panel-description"></p><div id="panel-content"></div></dialog>
-<footer class="prototype">ELYNDOR · HOMEPAGE PROTOTYPE · NO LIVE PURCHASES</footer>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101e32"><meta name="description" content="Axiom Academia — The World of Elyndor"><title>Axiom Academia | The World of Elyndor</title><link rel="stylesheet" href="home.css"></head><body>
+<main class="home" aria-label="Axiom Academia home screen">
+<div class="art-frame"><picture><source media="(max-width:650px) and (orientation:portrait)" srcset="assets/elyndor-portrait.webp"><img class="home-art" src="assets/elyndor-landscape.webp" alt="Illustrated map of Elyndor with the Axiom Academia title and ornamental navigation" fetchpriority="high"></picture>
+<nav class="hotspots" aria-label="Main game menu">
+<a class="hotspot enter" href="becoming.html" aria-label="Enter Elyndor"><span class="sr-only">Enter Elyndor</span></a>
+<button class="hotspot archive" type="button" data-panel="archive" aria-label="Academy Archive"></button>
+<button class="hotspot exchange" type="button" data-panel="exchange" aria-label="Exchange of Elyndor"></button>
+<a class="hotspot character" href="becoming.html#character" aria-label="Character"></a>
+<button class="hotspot regions" type="button" data-panel="regions" aria-label="Regions"></button>
+<button class="hotspot store" type="button" data-panel="store" aria-label="Academy Store"></button>
+<button class="hotspot profile" type="button" data-panel="character" aria-label="Character profile"></button>
+<button class="hotspot messages" type="button" data-panel="messages" aria-label="Messages"></button>
+<button class="hotspot notifications" type="button" data-panel="notifications" aria-label="Notifications"></button>
+<button class="hotspot settings" type="button" data-panel="settings" aria-label="Settings"></button>
+</nav></div>
+<dialog id="panel" aria-labelledby="panel-title"><div class="panel-head"><h2 id="panel-title"></h2><button type="button" id="panel-close" aria-label="Close panel">✕</button></div><p id="panel-description"></p><div id="panel-content"></div></dialog>
 </main><script type="module" src="home.js"></script></body></html>
