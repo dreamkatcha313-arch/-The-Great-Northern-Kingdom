@@ -58,3 +58,11 @@
 .muninn-head .muninn-eye{left:79%;top:10%;width:3%;height:1.8%}
 }
 @media(prefers-reduced-motion:reduce){.muninn-body,.muninn-head,.muninn-wing,.muninn-head .muninn-eye{animation:none!important}}
+
+/* Disable flawed duplicated clipped sprites until properly isolated rig assets exist. */
+.home.muninn-ready .muninn-layer{display:none!important}
+.home.muninn-ready .home-art{content:normal!important}
+.home.muninn-ready .home-art{content:unset!important}
+
+/* Original static raven stays integrated in the painted scene, without blur. */
+.home-art{filter:none!important}
