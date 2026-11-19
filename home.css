@@ -66,3 +66,16 @@
 
 /* Original static raven stays integrated in the painted scene, without blur. */
 .home-art{filter:none!important}
+
+/* Water surface caustics: separate masked highlights, not a blur filter.
+   Water zones are deliberately bounded away from Jade and the menu. */
+.water-surface{position:absolute;left:22%;top:65%;width:76%;height:22%;overflow:hidden;opacity:.48;pointer-events:none;mask-image:linear-gradient(to bottom,transparent 0%,#000 28%,#000 75%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 28%,#000 75%,transparent 100%)}
+.water-surface i{position:absolute;left:-40%;width:70%;height:2px;border-radius:100%;background:linear-gradient(90deg,transparent,#c6ecf7a0 25%,#f8d8a6a8 45%,transparent 90%);box-shadow:0 2px 7px #b4e3ff60;transform:skewX(-19deg);animation:water-drift 12s linear infinite}
+.water-surface i:nth-child(1){top:12%;animation-duration:12s}
+.water-surface i:nth-child(2){top:33%;animation-delay:-7s;animation-duration:15s;width:46%}
+.water-surface i:nth-child(3){top:52%;animation-delay:-4s;animation-duration:17s}
+.water-surface i:nth-child(4){top:71%;animation-delay:-11s;animation-duration:14s;width:56%}
+.water-surface i:nth-child(5){top:87%;animation-delay:-3s;animation-duration:19s}
+@keyframes water-drift{0%{transform:translateX(0) scaleX(.65) skewX(-19deg);opacity:0}20%{opacity:.7}70%{opacity:.55}100%{transform:translateX(210%) scaleX(1.2) skewX(-19deg);opacity:0}}
+@media(max-width:650px) and (orientation:portrait){.water-surface{left:23%;top:55%;width:76%;height:24%;opacity:.38}}
+@media(prefers-reduced-motion:reduce){.water-surface{display:none}}
