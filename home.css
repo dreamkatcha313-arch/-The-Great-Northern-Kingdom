@@ -25,3 +25,15 @@
 @keyframes elyndor-wing{0%,100%{transform:scaleY(.65)}50%{transform:scaleY(1.15)}}
 @media(max-width:650px) and (orientation:portrait){.water-motion{left:6%;top:60%;width:88%;height:15%;opacity:.45}.raven-flight{top:24%;width:28px}.raven-two{top:32%;width:20px}}
 @media(prefers-reduced-motion:reduce){.ambient-motion{display:none}}
+
+/* Separated Muninn assets: activate only after all required art files load. */
+.muninn-layer{display:none;position:absolute;left:.18%;top:34.75%;width:12.32%;height:22.32%;pointer-events:none;z-index:2;transform-origin:70% 95%}
+.muninn-layer picture,.muninn-sprite{display:block;width:100%;height:100%}
+.muninn-sprite{object-fit:fill;filter:drop-shadow(0 2px 2px #04091366)}
+.home.muninn-ready .muninn-layer{display:block;animation:muninn-perch 9s ease-in-out infinite}
+.home.muninn-ready .home-art{content:url("assets/elyndor-landscape-clean.webp")}
+.muninn-eye{position:absolute;left:83%;top:18%;width:3%;height:2%;background:#060d1b;border-radius:50%;opacity:0;animation:muninn-blink 8s step-end infinite}
+@keyframes muninn-perch{0%,20%,50%,100%{transform:rotate(0deg) translateY(0)}27%{transform:rotate(-2deg) translateY(-.3%)}36%{transform:rotate(1.5deg)}60%{transform:rotate(0deg)}75%{transform:rotate(-1deg) translateY(-.6%)}83%{transform:rotate(0deg)}}
+@keyframes muninn-blink{0%,30%,32%,67%,69%,100%{opacity:0}31%,68%{opacity:1}}
+@media(max-width:650px) and (orientation:portrait){.muninn-layer{left:.85%;top:44.86%;width:18.38%;height:13.22%}.home.muninn-ready .home-art{content:url("assets/elyndor-portrait-clean.webp")}.muninn-eye{left:76%;top:8%;width:3%;height:1.5%}}
+@media(prefers-reduced-motion:reduce){.home.muninn-ready .muninn-layer{animation:none}.muninn-eye{animation:none}}
