@@ -9,3 +9,19 @@
 .hotspot{-webkit-tap-highlight-color:transparent!important;appearance:none;-webkit-appearance:none;outline-color:transparent}
 .hotspot:focus-visible{outline-color:#c6a168}
 @media(max-width:650px) and (orientation:portrait){.art-frame::after{border-width:4px;box-shadow:inset 0 0 0 2px #211a17,inset 0 0 0 4px #a57a3f}.art-frame::before{font-size:16px}}
+
+/* Ambient scenery: transparent and non-interactive; no button glow. */
+.ambient-motion{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.hotspots{z-index:3}
+.water-motion{position:absolute;left:22%;top:61%;width:58%;height:15%;overflow:hidden;opacity:.6;mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent)}
+.ripple{position:absolute;display:block;width:20%;height:22%;border:1px solid #c9e4e5a8;border-radius:50%;box-shadow:0 0 6px #9fd9e240;transform:scale(.3);opacity:0;animation:elyndor-ripple 7s ease-out infinite}
+.ripple-one{left:15%;top:44%}.ripple-two{left:51%;top:20%;animation-delay:2.3s}.ripple-three{left:72%;top:57%;animation-delay:4.5s}
+@keyframes elyndor-ripple{0%{transform:scale(.25);opacity:0}14%{opacity:.55}70%{opacity:.18}100%{transform:scale(2.8);opacity:0}}
+.raven-flight{position:absolute;width:clamp(22px,4vw,60px);height:auto;left:-12%;top:21%;opacity:0;filter:drop-shadow(0 1px 1px #07111d);animation:elyndor-flight 26s linear infinite}
+.raven-flight svg{display:block;width:100%;fill:#142436dc;animation:elyndor-wing 1.5s ease-in-out infinite;transform-origin:50% 50%}
+.raven-two{top:28%;width:clamp(15px,2.8vw,40px);animation-delay:12s;animation-duration:31s}
+.raven-two svg{animation-delay:.5s}
+@keyframes elyndor-flight{0%,5%{left:-12%;opacity:0;transform:translateY(0)}12%{opacity:.7}42%{transform:translateY(-20px)}75%{opacity:.65}90%,100%{left:110%;opacity:0;transform:translateY(8px)}}
+@keyframes elyndor-wing{0%,100%{transform:scaleY(.65)}50%{transform:scaleY(1.15)}}
+@media(max-width:650px) and (orientation:portrait){.water-motion{left:6%;top:60%;width:88%;height:15%;opacity:.45}.raven-flight{top:24%;width:28px}.raven-two{top:32%;width:20px}}
+@media(prefers-reduced-motion:reduce){.ambient-motion{display:none}}
